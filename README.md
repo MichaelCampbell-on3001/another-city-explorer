@@ -1,3 +1,6 @@
+Netlify deployed site: 
+https://brave-hamilton-aeedc9.netlify.app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -110,7 +113,7 @@ Lab 09 Partner -
 
 Name of feature: Locations
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 3hrs
 
 Start time: _____
 
@@ -122,7 +125,7 @@ Actual time needed to complete: _____
 
 Name of feature: Maps
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 3hrs
 
 Start time: _____
 
@@ -134,7 +137,7 @@ Actual time needed to complete: _____
 
 Name of feature: Errors
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 3hrs
 
 Start time: _____
 
