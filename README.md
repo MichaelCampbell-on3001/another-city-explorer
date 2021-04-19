@@ -68,3 +68,93 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+---
+
+# City Explorer
+
+**Author**: Michael Campbell
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+
+## Overview
+City Explorer React application that uses the Axios library to make user-initiated reqeusts for data from a thrid-party API.
+<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+
+## Getting Started
+[Building City Explorer](https://trello.com/b/diRgFkow/michaels-city-explorer)
+<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+
+## Architecture
+<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+## Change Log
+<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+
+01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+
+04-19-21 1:30 pm - Began setup pf City Explorer
+04-19-21 3:30 pm - Created React app locally and linked it to Github repo.
+04-19-21 1:30 pm
+
+
+## Credit and Collaborations
+<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+Lab 06 Partner - Tim V
+Lab 07 Partner - 
+Lab 08 Partner - 
+Lab 09 Partner -
+
+---
+## Time Estimates
+
+Name of feature: Locations
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+---
+
+Name of feature: Maps
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+---
+
+Name of feature: Errors
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+---
+
+Name of feature: ______
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+---
+
+
+
