@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { render } from '@testing-library/react';
+import axios from 'axios';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchQuery: '',
+      location {}
+    }
+  }
+
+  getLocation = async () => {
+    const apiUrl = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_CITY_KEY}&q=${this.state.searchQuery}&format=json`
+
+    const response = await axios.get(apiUrl);
+
+    const location = response.data[0];
+
+    this.setState ({
+      location,
+    });
+  }
+
+  render() {
+    
+  }
+
+
 }
-
-export default App;
