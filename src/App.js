@@ -7,7 +7,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       searchQuery: '',
-      location {}
+      location: {}
     }
   }
 
@@ -24,8 +24,26 @@ class App extends React.Component {
   }
 
   render() {
-    
+    const img_url = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_CITY_KEY}&center=${this.state.location.lat},${this.state.location.lon}&size=${window.innerWidth}x300&format=jpg&zoom=12`;
+
+    //console.log(img_url);
+
+    return (
+      <>
+      <input onChange={(e) => this.setState({ searchQuery: e.target.value })} placeholder="search for a city"></input>
+
+      <button onClick={this.getLocation}>Explore!</button>
+      {this.state.location.place_id &&
+      <>
+      <h2>The city is: {this.state.location.display_name}</h2>
+      <img src={img_url} alt="location" />
+      </>
+      }
+      </>
+    )
   }
 
 
 }
+
+export default App;
