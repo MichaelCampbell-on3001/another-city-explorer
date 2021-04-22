@@ -83,11 +83,36 @@ render(){
             </Card>
       )}
 
-      
+      {this.state.location.place_id && this.state.isError == false && (
+        <Card style={{ minWidth: "18rem" }}>
+        <Card.Img variant="top" src={img_url} alt="Map" />
+        <Card.Body>
+          <Card.Title>{this.state.location.display_name}</Card.Title>
+          <Card.Text>
+            lat: {this.state.location.lat} lon: {this.state.location.lon}
+            <br></br>
+          </Card.Text>
+          <ListGroup> 
+              <Weather weather={this.state.weather}/>
+          </ListGroup>
+        </Card.Body>
+      </Card>
+    )}
+
+    {this.state.movies[0] && this.state.isError === false && (
+      <>
+      <Navbar
+      bg="light"
+      expand="lg"
+      >
+        <h2>The city you searched was featured in these movies!</h2>
+        </Navbar>
+        
+
+    )}
 
 
 
-      )}
 
 
 
