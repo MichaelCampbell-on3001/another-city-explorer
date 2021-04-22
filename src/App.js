@@ -1,13 +1,16 @@
+
 import React from "react";
 import { Container, Form, Button, Card, Navbar, ListGroup } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import './App.css';
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+
       searchQuery: "",
       location: {},
       weather: [],
@@ -114,6 +117,7 @@ render(){
     
     </Container>
   );
+
 }
 
 }
