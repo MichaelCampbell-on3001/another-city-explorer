@@ -1,6 +1,7 @@
 Netlify deployed site: 
 https://brave-hamilton-aeedc9.netlify.app
-
+Pull requests: 
+lab06: https://github.com/MichaelCampbell2020/city-explorer/pull/1
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
