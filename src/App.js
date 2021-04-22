@@ -67,8 +67,30 @@ render(){
         </Form>
       </Navbar>
 
+      {this.state.isError === true && (
+        <Card style={{ minWidth: "18rem" }}>
+          <Card.img
+          variant="top"
+          src={`https://images.app.goo.gl/QKoVUdUktLrJ7EDM8`}
+          alt="Something unexpected happend, stand tuned"
+          />
+
+          <Card.Body>
+            <Card.Title>
+              What in the what!
+            </Card.Title>
+            </Card.Body>
+            </Card>
+      )}
 
       
+
+
+
+      )}
+
+
+
     </Container>
   )
 }
