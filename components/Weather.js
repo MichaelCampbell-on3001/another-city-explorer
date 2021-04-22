@@ -1,28 +1,22 @@
 import React from 'react';
-import CardColumns from 'react-bootstrap/CardColumns'
-import Card from 'react-bootstrap/Card'
+import ListGroup from 'react-bootstrap/ListGroup'
+import { faCloudSunRain } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default class Movies extends React.Component {
-  render(){
-    return(
-      <CardColumns>
+class Weather extends React.Component {
+    render() {
+        return(
+            this.props.weather.map((day, index) =>
+                <ListGroup.Item key={index}>
+                    <FontAwesomeIcon icon={faCloudSunRain} className="mr-sm-2"/>
+                    {`
+                    ${day.date}
+                    ${day.forcast}
+                    `}
+                </ListGroup.Item>
+            )
+        );
+    }
+} 
 
-        {
-          this.props.movies.map((movie,index) =>
-          <Card key={index}>
-            <Card.Img src={movie.img_url || "https://www.flickr.com/photos/cat-sidh/48574513541"} alt={movies.title}/>
-            <Card.Body>
-              <Card.Title>{movie.title}</Card.Title>
-              <Card.Text>{movie.overview}</Card.Text>
-              <Card.Text>{movie.released_on}</Card.Text>
-              <Card.Text>{movie.average_votes}</Card.Text>
-              <Card.Text>{movie.total_votes}</Card.Text>
-              <Card.Text>{movie.popularity}</Card.Text>
-            </Card.Body>
-          </Card>
-          )
-        }
-      </CardColumns>
-    );
-  }
-}
+export default Weather;
