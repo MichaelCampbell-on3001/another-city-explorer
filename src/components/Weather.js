@@ -1,7 +1,6 @@
 import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup'
-import { faCloudSunRain } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import Superagent
 
 class Weather extends React.Component {
     render() {
